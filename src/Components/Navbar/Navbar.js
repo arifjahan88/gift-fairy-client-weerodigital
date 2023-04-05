@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import navlogo from "../../Assests/nav-logo.png";
 
 const Navbar = () => {
+  const [isFixed, setFixed] = useState(false);
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY > 85) {
+        setFixed(true);
+      } else {
+        setFixed(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
   const menuItems = (
     <>
       <li>
         <Link to="/" className="rounded-lg m-1">
           Home
         </Link>
-        <Link className="rounded-lg m-1">Product</Link>
+        <Link to="/product" className="rounded-lg m-1">
+          Product
+        </Link>
         <Link className="rounded-lg m-1">Booking</Link>
         <Link className="rounded-lg m-1">About</Link>
         <Link to="/contact" className="rounded-lg m-1">
@@ -18,7 +32,13 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar p-0 py-2 justify-between bg-base-100">
+    <div
+      className={
+        isFixed
+          ? "navbar p-0 justify-around mx-auto backdrop-blur-md fixed z-50 border-b-[1px]"
+          : "navbar p-0 py-2 justify-around mx-auto absolute z-50"
+      }
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -44,8 +64,8 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
-          Gift Fairy
+        <Link to="/" className="">
+          <img className="w-48" src={navlogo} alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
