@@ -6,7 +6,7 @@ const ContactPart = () => {
     <div className="bg-[#1371B9] py-14 lg:my-[100px] my-10">
       <div className="lg:flex justify-between max-w-[1334px] mx-auto">
         <p
-          data-aos="fade-right"
+          data-aos="fade-left"
           data-aos-duration="1000"
           className="lg:text-5xl font-semibold text-white text-center"
         >
@@ -16,7 +16,7 @@ const ContactPart = () => {
           get in touch with us.
         </p>
         <div
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-duration="1000"
           className="flex items-center justify-center"
         >

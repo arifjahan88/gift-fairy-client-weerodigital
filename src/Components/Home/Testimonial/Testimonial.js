@@ -39,8 +39,9 @@ const Testimonial = () => {
     },
   ];
   return (
-    <div data-aos="zoom-out" data-aos-duration="2000" className="max-w-[1234px] mx-auto mb-10">
+    <div data-aos="fade-up" data-aos-duration="2000" className="max-w-[1234px] mx-auto mb-10">
       <Swiper
+        loop="true"
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
