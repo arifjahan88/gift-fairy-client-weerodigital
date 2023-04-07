@@ -5,7 +5,7 @@ const Product = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/giftcategories")
+    fetch("https://gift-fairy-server-weerodigital.vercel.app/giftcategories")
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);

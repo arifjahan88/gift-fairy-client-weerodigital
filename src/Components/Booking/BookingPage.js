@@ -4,7 +4,7 @@ import BookingCard from "./BookingDetails/BookingCard";
 const BookingPage = () => {
   const [details, setDetails] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/giftdetails")
+    fetch("https://gift-fairy-server-weerodigital.vercel.app/giftdetails")
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);

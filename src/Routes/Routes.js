@@ -40,7 +40,9 @@ export const router = createBrowserRouter([
         path: "/product/:id",
         element: <CategoryDetails />,
         loader: ({ params }) => {
-          const fetchdata = fetch(`http://localhost:5000/giftcategories/${params.id}`);
+          const fetchdata = fetch(
+            `https://gift-fairy-server-weerodigital.vercel.app/giftcategories/${params.id}`
+          );
           return fetchdata;
         },
       },
@@ -48,7 +50,9 @@ export const router = createBrowserRouter([
         path: "/product/booking/:id",
         element: <Booking />,
         loader: ({ params }) => {
-          const bookingData = fetch(`http://localhost:5000/giftdetails/${params.id}`);
+          const bookingData = fetch(
+            `https://gift-fairy-server-weerodigital.vercel.app/giftdetails/${params.id}`
+          );
           return bookingData;
         },
       },
