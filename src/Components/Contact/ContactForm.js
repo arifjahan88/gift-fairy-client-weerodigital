@@ -5,19 +5,17 @@ import { FaPhoneSquareAlt } from "react-icons/fa";
 
 const ContactForm = () => {
   return (
-    <div className="pt-28">
+    <div className="">
       <section className="bg-white max-w-[1234px] mx-auto">
-        <div className="py-8 lg:py-16 px-4">
-          <div>
-            <h2 className="lg:text-4xl font-bold text-center text-xl">
-              CONTACT <span className="text-blue-600">US</span>
-            </h2>
-            <div className="w-1/3 mx-auto border mt-5 border-slate-500 opacity-50"></div>
+        <div className="py-8 lg:py-16">
+          <div className="py-3">
+            <h1 className="text-3xl font-bold">About Us</h1>
+            <p className="opacity-50">
+              Want to send feedback about us or join Us? Need details about our Next plan? <br />{" "}
+              Let us know.
+            </p>
           </div>
-          <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl max-w-screen-md mx-auto mt-4">
-            Want to send feedback about us or join Us? Need details about our Next plan? <br /> Let
-            us know.
-          </p>
+
           <div className="grid lg:grid-cols-3 gap-7">
             <div className="lg:col-span-2">
               <form className="space-y-8 shadow-xl p-5 rounded-2xl bg-gray-50 border">
@@ -29,7 +27,7 @@ const ContactForm = () => {
                     type="email"
                     id="email"
                     className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                    placeholder="name@ieee.org"
+                    placeholder="name@gmail.com"
                     required
                   />
                 </div>

@@ -23,8 +23,12 @@ const Navbar = () => {
         <Link to="/product" className="rounded-lg m-1">
           Product
         </Link>
-        <Link className="rounded-lg m-1">Booking</Link>
-        <Link className="rounded-lg m-1">About</Link>
+        <Link to="/bookings" className="rounded-lg m-1">
+          Booking
+        </Link>
+        <Link to="/about" className="rounded-lg m-1">
+          About
+        </Link>
         <Link to="/contact" className="rounded-lg m-1">
           Contact
         </Link>

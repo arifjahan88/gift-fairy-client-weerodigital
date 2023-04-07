@@ -20,7 +20,7 @@ const ContactPart = () => {
           data-aos-duration="1000"
           className="flex items-center justify-center"
         >
-          <Link to="">
+          <Link to="contact">
             <button className="lg:px-7 lg:py-3 px-3 py-1 bg-yellow-500 hover:bg-green-600 hover:text-white duration-500 rounded-xl lg:text-xl uppercase font-bold">
               Contact Us
             </button>

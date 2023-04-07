@@ -9,9 +9,12 @@ const Product = () => {
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);
+
   return (
     <div className="pt-20 max-w-[1234px] mx-auto">
-      <h1 className="text-2xl my-4 font-semibold text-center">Select Your Category </h1>
+      <h1 className="text-2xl my-4 font-semibold text-center text-sky-700">
+        Please Select Your Category{" "}
+      </h1>
       <div className="text-center">
         {categories.map((data) => (
           <Link key={data.id} to={`/product/${data.id}`}>

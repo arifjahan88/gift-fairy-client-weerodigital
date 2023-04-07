@@ -1,6 +1,7 @@
 import React from "react";
 import PopularCard from "./PopularCard";
 import giftBox from "../../../Assests/giftbox";
+import { Link } from "react-router-dom";
 
 const PopularService = () => {
   const GiftData = [
@@ -71,9 +72,11 @@ const PopularService = () => {
         ))}
       </div>
       <div className="text-center">
-        <button type="button" className="btn btn-info text-white">
-          See More Gifts
-        </button>
+        <Link to="/product">
+          <button type="button" className="btn btn-info text-white">
+            See More Gifts
+          </button>
+        </Link>
       </div>
     </div>
   );

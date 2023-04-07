@@ -32,8 +32,8 @@ const CardTestimonial = ({ color, quoteText, quoteAuthor, authorTitle }) => {
               src={star_icon_color}
               alt=""
             />
-            <p className="lg:text-5xl text-2xl">“{quoteText}”</p>
-            <p className="text-5xl font-bold my-4">{quoteAuthor}</p>
+            <p className="lg:text-5xl text-2xl font-sans">“{quoteText}”</p>
+            <p className="text-5xl font-bold my-4 mt-10">{quoteAuthor}</p>
             <p className="text-2xl font-semibold">{authorTitle}</p>
           </div>
         </div>

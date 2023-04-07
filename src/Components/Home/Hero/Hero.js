@@ -19,7 +19,7 @@ const Hero = () => {
           Shop the Perfect Gift for Every Occasion <br />
           Find Unique and Thoughtful Presents on Our Website
         </p>
-        <Link>
+        <Link to="/product">
           <button className="btn btn-outline mt-3">Get Started</button>
         </Link>
       </div>
